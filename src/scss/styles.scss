@@ -1,0 +1,186 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+$font-family-sans-serif: 'SF Pro Display', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$dark: #272727;
+$yellow: #FFCE07;
+$gray: #C4C4C4;
+
+$primary: $yellow;
+$body-color: $dark;
+$body-secondary-color: $gray;
+
+@import '~bootstrap/scss/bootstrap';
+
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar.shadow-sm {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+img.logo {
+  height: 55.57px;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: $dark;
+}
+
+.nav-link:hover {
+  color: $yellow !important;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-nav .nav-link.active {
+  color: $yellow !important;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.fa-whatsapp {
+  color: #ffffff;
+  background-color: #25d366;
+}
+
+.fab {
+  bottom: 0;
+  right: 0;
+}
+
+a > .card:hover {
+  border-color: $yellow !important;
+}
+
+.text-shadow {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px black;
+}
+
+.btn {
+  color: $dark;
+}
+
+.btn-primary:hover {
+  box-shadow: 3px 4px 10px 0 rgba(255, 206, 7, 1) !important;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators .active {
+  background-color: $yellow !important;
+}
+
+.carousel-indicators button {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 100%;
+  background-color: $gray !important;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.accessories .quote-1 {
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  opacity: 20%;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.accessories .quote-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 20%;
+}
+
+.dots {
+  width: 100px;
+  height: 84px;
+  position: absolute;
+  background-size: 25px 20px;
+  z-index: -2;
+}
+
+.dots.dot-yellow {
+  background-image: radial-gradient($yellow 5px, transparent 0);
+}
+
+.dots.dot-gray {
+  background-image: radial-gradient($gray 5px, transparent 0);
+}
+
+.dots.dot-1 {
+  top: 0;
+  right: 0;
+}
+
+.dots.dot-2 {
+  bottom: 4%;
+  left: -10%;
+}
+
+.dots.dot-3 {
+  top: 10%;
+  left: 42%;
+}
+
+.dots.dot-4 {
+  width: 300px;
+  right: 15%;
+  bottom: -18%;
+}
+
+.b-outline {
+  z-index: 1;
+  top: 14%;
+  left: 0;
+}
+
+@media (max-width: 576px) {
+  .b-outline {
+    top: 5%;
+    left: 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-outline {
+    left: 6%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-testimonial-position {
+    position: absolute;
+    width: 28%;
+    bottom: -5%;
+    left: 25%;
+  }
+
+  .accessories .quote-2 {
+    top: 50%;
+  }
+
+  .dots.dot-1 {
+    right: 43%;
+  }
+}
